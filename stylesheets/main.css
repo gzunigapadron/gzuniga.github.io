@@ -1,7 +1,20 @@
-h1 {
+body {
     font-family: 'Bitter', sans-serif;
 }
 
-body {
-    margin: 5%;
+nav {
+    display: inline-flex;
+    width: max-content;
+}
+
+nav div {
+    align-items: center; 
+}
+
+#nav-links {
+    list-style: none;
+}
+
+#nav-links li{
+    display: inline;
 }
