@@ -3,18 +3,56 @@ body {
 }
 
 nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #AE8E1C;
+}
+
+nav h1, nav ul {
     display: inline-flex;
-    width: max-content;
+    padding: 0 5px;
+    align-items: center;
 }
 
-nav div {
-    align-items: center; 
+
+nav li {
+    display: inline-block;
+    padding: 10px;
 }
 
-#nav-links {
-    list-style: none;
+nav a, nav h1{
+    text-decoration: none;
+    color: #F7EBE8;
 }
 
-#nav-links li{
-    display: inline;
+/* button design by Michael McMillan */
+.button-54 {
+    background-color: #F7EBE8;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #323031;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
+
+.button-54:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+
+@media (min-width: 768px) {
+    .button-54 {
+        padding: 0.25em 0.75em;
+    }
+}
+
